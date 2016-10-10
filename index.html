@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/eurecatTemplate.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/b24061a8ba.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+
+			<!-- In between the <div="reveal"> and the <div class="slides">-->
+			<header style="position: absolute;top: 50px; left: 100px; z-index:500; font-size:18px; color:lightgray">
+
+			</header>
+			<!-- In between the <div="reveal"> and the <div class="slides">-->
+
+			<div class="slides">
+				<section id="titleSlide">
+					<div class="initSlide">
+
+						<div class ="titlePlacement" style="width: 500px;">
+							<img class="plain" src="css/theme/img/eurecatLogo.jpg">
+						</div>
+
+						<div class ="presentationTitle">
+							<span class="bar">|</span>
+							Presentation Title
+						</div>
+
+					</div>
+
+					<div style="float: left">
+						<div align="left">
+							<p style="font-size: 22px"> Presenter: <\ Presenter Name \> </p>
+							<p style="font-size: 22px"> Unit: <\ Unit Name \></p>
+						</div>
+
+					</div>
+
+				</section>
+
+				<section data-state="header1">
+					<style>.header1 header:after {
+						content: url("css/theme/img/Picture1.png") " | Presentation Title";
+					}</style>
+
+					<div>
+						<h2>Title Slide 1</h2>
+					</div>
+
+					<div class="box"></div>
+					<hr class="separator">
+
+					<p style="align:center">
+						Lore Ipsum Text...
+					</p>
+					<p style="align:center">
+						Lore Ipsum Text...
+					</p>
+
+
+				</section>
+
+				<section data-state="header1">
+					<style>.header1 header:after {
+						content: url("css/theme/img/Picture1.png") " | Presentation Title";
+					}</style>
+					<div>
+						<h2>Title Slide 2</h2>
+						<p style="align:center">
+							Lore Ipsum Text...
+						</p>
+
+
+					</div>
+				</section>
+
+				<section id="endSlide" data-state="header1">
+					<style>.header1 header:after {
+						content: url("css/theme/img/Picture1.png") " | Presentation Title";
+					}</style>
+					<div class="final">
+						<p>Thank you</p>
+					</div>
+					<div class="finalUrl">
+						<p>www.eurecat.org</p>
+					</div>
+
+					<div class="vbox"></div>
+					<hr class="vline">
+
+					<div class="finalText">
+						<p><i class="fa fa-user" aria-hidden="true"> Preseneter Name</i></p>
+						<p><i class="fa fa-building" aria-hidden="true"> Preseneter Unit</i></p>
+						<p><i class="fa fa-envelope" aria-hidden="true"> Preseneter email</i></p>
+						<p><i class="fa fa-twitter-square" aria-hidden="true"> Preseneter Twiter</i></p>
+						<p><i class="fa fa-linkedin-square" aria-hidden="true"> Preseneter LinkEdIn</i></p>
+
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				// Display a presentation progress bar
+				progress: true,
+
+				// Push each slide change to the browser history
+				history: true,
+
+				// Shows the slide number using default formatting
+				slideNumber: true,
+
+				// Slide number formatting can be configured using these variables:
+				//  "h.v":  horizontal . vertical slide number (default)
+				//  "h/v":  horizontal / vertical slide number
+				//    "c":  flattened slide number
+				//  "c/t":  flattened slide number / total slides
+				slideNumber: 'c',
+
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+
+
+		</script>
+	</body>
+</html>
