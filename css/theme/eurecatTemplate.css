@@ -394,3 +394,43 @@ body {
 .finalText p{
   margin: 1em !important;
 }
+.sl-block{
+  display:inline-block;
+  border-radius: 25px;
+  color:white;
+  font-size: 14px !important;
+  position: relative;
+  width:80%;
+  margin:0 auto;
+}
+
+.sl-block img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+.sl-block ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tg{
+  width:100%;
+  font-size: 16px !important;
+
+}
+
+.tgh{
+  background-color: purple;
+  color:white;
+}
+
+.tg td{
+  text-align:left !important;
+  vertical-align:middle !important;
+}
+.tg th{
+  text-align:center !important;
+  vertical-align:middle !important;
+}
